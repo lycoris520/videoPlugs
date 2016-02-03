@@ -91,14 +91,14 @@
 			};
 			//对象私有变量定义
 			var config             = $.extend(defaults,option);                			//替换默认配置
-      	    var container          = this; 												//当前容器 一个jquery对象
-      	    var content            = null;												//视频直接父元素
-            var video              = null;												//视频对象
-            var control            = null;                                            	//控制栏对象
-            var subtitle           = null;												//字幕
-            var barrage            = null; 												//弹幕
-            var cover              = null;												//封面
-      	    var barrageInterval    = null;     											//弹幕定时器
+		      	 var container          = this; 												//当前容器 一个jquery对象
+		      	 var content            = null;												//视频直接父元素
+		         var video              = null;												//视频对象
+		         var control            = null;                                            	//控制栏对象
+		         var subtitle           = null;												//字幕
+		         var barrage            = null; 												//弹幕
+		         var cover              = null;												//封面
+		  	 var barrageInterval    = null;     											//弹幕定时器
 			//清除parent的子节点
 			var empty              = function(parent){                                  //清除当前对象的所有子节点
 				if( !parent ) throw new Error("没有当前对象!");
@@ -238,8 +238,9 @@
 		            return new videoWindow( config);
 		        }
 				this.init();
-                return this;
+                        return this;
 			};
+			
 			videoWindow.prototype = {
 				//初始化配置
 				init              : function(){
